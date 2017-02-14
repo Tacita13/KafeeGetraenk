@@ -28,7 +28,6 @@ public class Test {
         public int getPreis (){
         return Preis;
         }
-        //Este toString se saco de lo que se había escrito en la clase abstracta, can I do that?
         @Override
         public String toString (){
         if( getKoffein() != 0) return "Caffeinated Coffee "+" "+ Preis;
@@ -61,7 +60,7 @@ public class Test {
         String streuseln="mixed";
         if(Streuseln) {
             streuseln="sprinkled";
-        }//Obvio que el hot cocoa no tiene cafeina, aun asi tengo q tener el if?
+        }
          if( getKoffein() != 0){          
              return " Hot Cocoa "+streuseln+" "+Preis;
                 }
@@ -107,7 +106,7 @@ public class Test {
         KaffeeGetraenk kaffee = new Kaffee ();
         System .out. println (" Coffee : "+ kaffee );
         KaffeeGetraenk milchkaffee = new MilchKaffee ();
-// (( MilchKaffee ) milchkaffee ). schaeume ();
+
         System .out. println (" White Coffee : "+ milchkaffee );
         KaffeeGetraenk kakao = new Kakao ( true );
         System .out. println (" Hot Cocoa : "+ kakao );
